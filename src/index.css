@@ -13,3 +13,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-layout {
+  margin-top: 7em;
+}
+
+.connect-wallet {
+  margin-right: 0.5em;
+}
+
+.home-view-hero {
+  text-align: center;
+}
+
+.home-view-create {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
