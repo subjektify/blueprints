@@ -15,7 +15,7 @@ export const HomeView = () => {
                 />
             </Container>
             <Container className="home-view-create">
-                <Button icon primary labelPosition='left'>
+                <Button icon secondary labelPosition='left'>
                     <Icon name='rocket' />Create your own</Button>
             </Container>
             <Divider horizontal>
