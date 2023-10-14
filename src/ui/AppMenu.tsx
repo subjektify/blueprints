@@ -9,9 +9,8 @@ export const AppMenu = () => {
           <Image size='mini' src='https://assets.grams.dev/subjektify/logo/logo.png' style={{ marginRight: '1.5em' }} />
           Blueprints
         </Menu.Item>
-        <Menu.Item as='a'>Subjects</Menu.Item>
         <Menu.Item as='a'>Namespaces</Menu.Item>
-        <Menu.Item as='a'>Contracts</Menu.Item>
+        <Menu.Item as='a'>Compositions</Menu.Item>
         <Menu.Menu position="right">
           <Menu.Item>
             <Input icon='search' placeholder='Search...' />

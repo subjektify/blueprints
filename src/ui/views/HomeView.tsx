@@ -25,12 +25,7 @@ export const HomeView = () => {
             </Divider>
             <Divider horizontal>
                 <Header as='h4'>
-                    Subjects
-                </Header>
-            </Divider>
-            <Divider horizontal>
-                <Header as='h4'>
-                    Contracts
+                    Compositions
                 </Header>
             </Divider>
         </div>
