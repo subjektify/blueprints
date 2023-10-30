@@ -4,5 +4,14 @@
     "license": "Apache-2.0",
     "sources": [
         "subjects"
+    ],
+    "plugins": [
+        {
+            "name": "typescript",
+            "dependency": {
+                "registry": "npm",
+                "name": "@subjektify-dev/typescript"
+            }
+        }
     ]
 }
