@@ -1,0 +1,9 @@
+
+subject Blueprint {
+    states: [ID]
+    behaviors: [publish]
+}
+
+string ID
+
+behavior publish
