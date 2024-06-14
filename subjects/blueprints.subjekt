@@ -1,9 +1,111 @@
 
 subject Blueprint {
-    states: [ID]
-    behaviors: [publish]
+    states: [
+        BlueprintState
+    ]
+    behaviors: [
+        CreateBlueprint,
+        UpdateBlueprint,
+        DeleteBlueprint
+    ]
+    subscriptions: [
+        OnBlueprintCreated,
+        OnBlueprintUpdated,
+        OnBlueprintDeleted
+    ]
 }
 
-string ID
+state BlueprintState {
+    id: string
+    name: string
+    description: string
+    version: string
+    created_at: timestamp
+    updated_at: timestamp
+}
 
-behavior publish
+behavior CreateBlueprint {
+    inputs: [
+        {
+            name: "name",
+            type: string
+        },
+        {
+            name: "description",
+            type: string
+        },
+        {
+            name: "version",
+            type: string
+        }
+    ]
+    outputs: [
+        {
+            name: "blueprint",
+            type: BlueprintState
+        }
+    ]
+    triggers: [
+        OnBlueprintCreated
+    ]
+}
+
+behavior UpdateBlueprint {
+    inputs: [
+        {
+            name: "id",
+            type: string
+        },
+        {
+            name: "name",
+            type: string
+        },
+        {
+            name: "description",
+            type: string
+        },
+        {
+            name: "version",
+            type: string
+        }
+    ]
+    outputs: [
+        {
+            name: "blueprint",
+            type: BlueprintState
+        }
+    ]
+    triggers: [
+        OnBlueprintUpdated
+    ]
+}
+
+behavior DeleteBlueprint {
+    inputs: [
+        {
+            name: "id",
+            type: string
+        }
+    ]
+    outputs: [
+        {
+            name: "success",
+            type: boolean
+        }
+    ]
+    triggers: [
+        OnBlueprintDeleted
+    ]
+}
+
+subscription OnBlueprintCreated {
+    trigger: BlueprintState
+}
+
+subscription OnBlueprintUpdated {
+    trigger: BlueprintState
+}
+
+subscription OnBlueprintDeleted {
+    trigger: BlueprintState
+}
