@@ -1,4 +1,0 @@
-# You can add other plugin outputs that you want to be ignored here
-# This is useful for plugins that generate files that are not part of the project
-
-deps/
