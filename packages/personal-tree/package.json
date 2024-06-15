@@ -1,0 +1,21 @@
+{
+    "name": "personal-tree",
+    "version": "0.1.0",
+    "license": "MIT",
+    "author": "Subjektify Labs",
+    "description": "A blueprint for creating a personal tree dApp using Subjektify.",
+    "scripts": {
+        "build": "subjektify build",
+        "test": "subjektify test"
+    },
+    "keywords": [
+        "subjektify",
+        "blueprint",
+        "tutorial",
+        "dapp",
+        "blockchain"
+    ],
+    "dependencies": {
+        "subjektify": "^0.1.0"
+    }
+}

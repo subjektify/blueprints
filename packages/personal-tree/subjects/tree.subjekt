@@ -1,0 +1,55 @@
+subject Tree {
+  states: [
+    TreeState
+  ]
+  behaviors: [
+    Grow,
+    Water,
+    Plant
+  ]
+}
+
+state TreeState {
+  id: string
+  age: int
+  height: float
+  health: string
+}
+
+behavior Grow {
+  inputs: [
+    {
+      name: "growthAmount",
+      type: float
+    }
+  ]
+  outputs: [
+    {
+      name: "newHeight",
+      type: float
+    }
+  ]
+  triggers: []
+}
+
+behavior Water {
+  inputs: []
+  outputs: [
+    {
+      name: "health",
+      type: string
+    }
+  ]
+  triggers: []
+}
+
+behavior Plant {
+  inputs: []
+  outputs: [
+    {
+      name: "health",
+      type: string
+    }
+  ]
+  triggers: []
+}
