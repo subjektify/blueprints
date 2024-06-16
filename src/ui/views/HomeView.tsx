@@ -1,4 +1,5 @@
-import { Button, Container, Divider, Header, Icon } from "semantic-ui-react"
+import { Container, Divider, Header, Icon } from "semantic-ui-react"
+import { FeaturedBlueprints } from "../components"
 
 export const HomeView = () => {
     return (
@@ -14,20 +15,13 @@ export const HomeView = () => {
                     content='Build dApps in minutes, not months'
                 />
             </Container>
-            <Container className="home-view-create">
-                <Button icon secondary labelPosition='left'>
-                    <Icon name='rocket' />Create your own</Button>
-            </Container>
             <Divider horizontal>
                 <Header as='h4'>
-                    Namespaces
+                    <Icon name='paper plane' />
+                    Featured Blueprints
                 </Header>
             </Divider>
-            <Divider horizontal>
-                <Header as='h4'>
-                    Compositions
-                </Header>
-            </Divider>
+            <FeaturedBlueprints />
         </div>
     )
 }
