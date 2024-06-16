@@ -11,33 +11,33 @@ import {
 
 const blueprints = [
     {
-        header: 'Personal Tree',
+        header: 'Vite React TypeScript',
         meta: '@subjektifylabs',
-        description: 'Create and manage a virtual personal tree.',
+        description: 'A Vite-powered React application with TypeScript.',
         image: 'https://avatars.githubusercontent.com/u/146701492',
-        link: '/docs/blueprints/personal-tree',
+        link: '/docs/blueprints/vite-react-ts',
     },
     {
-        header: 'Decentralized Blog',
+        header: 'Solidity Hardhat',
         meta: '@subjektifylabs',
-        description: 'A blueprint for a decentralized blogging platform.',
+        description: 'Develop and test smart contracts using Hardhat and Solidity.',
         image: 'https://avatars.githubusercontent.com/u/146701492',
-        link: '/docs/blueprints/decentralized-blog',
+        link: '/docs/blueprints/solidity-hardhat',
     },
     {
-        header: 'NFT Marketplace',
+        header: 'Serverless API TypeScript',
         meta: '@subjektifylabs',
-        description: 'Launch your own NFT marketplace with this blueprint.',
+        description: 'Create a serverless API using AWS Lambda and TypeScript.',
         image: 'https://avatars.githubusercontent.com/u/146701492',
-        link: '/docs/blueprints/nft-marketplace',
+        link: '/docs/blueprints/serverless-api-ts',
     },
     {
-        header: 'DAO Governance',
+        header: 'Node.js Express TypeScript',
         meta: '@subjektifylabs',
-        description: 'Set up a DAO governance structure.',
+        description: 'A Node.js application using Express and TypeScript.',
         image: 'https://avatars.githubusercontent.com/u/146701492',
-        link: '/docs/blueprints/dao-governance',
-    }
+        link: '/docs/blueprints/nodejs-express-ts',
+    },
 ];
 
 export const FeaturedBlueprints = () => {
