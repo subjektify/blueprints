@@ -1,7 +1,7 @@
 {
   "name": "blueprints",
-  "description": "Blueprint repository for building decentralized applications with Subjektify.",
   "version": "0.0.0",
+  "description": "Blueprint repository for building decentralized applications with Subjektify.",
   "private": true,
   "type": "module",
   "scripts": {
